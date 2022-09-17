@@ -1,0 +1,63 @@
+E-Commerce Database Analysis using MySQL.
+
+TOPICS COVERED IN THIS PROJECT ARE :
+  1. Traffic Source Analysis, Bid Optimization and Trend Analysis.
+  2. Analyzing Website Performance.
+  3. Analyzing Seasonality & Business Patterns.
+  4. Product Analysis.
+  5. User Analysis.
+  
+  The Sample E-Commerce Database used for this project consists of the following tables :
+  
+    1. orders: 
+      - The attributes/ columns in the table are order_id, created_at, website_session_id, user_id, primary_product_id, items_purchased, price_usd, cogs_usd.
+      
+    2. order_item_refunds: 
+      - The attributes are order_item_refund_id, created_at, order_item_id, order_id, refund_amount_usd.
+      
+    3. order_items: 
+      - Attributes are order_item_id, created_at, order_id, product_id, is_primary_item, price_usd, cogs_usd.
+      
+    4. products: 
+      - Attributes are product_id, created_at, product_name.
+      
+    5. website_sessions: 
+      - Attributes are website_session_id, created_at, user_id, is_repeat_session, utm_source, utm_campaign, utm_content, device_type, http_referer.
+      
+    6. website_pageviews:
+      - Attributes are website_pageview_id, created_at, website_session_id, pageview_url.
+      
+                            -- This is how the typical E-Commerce Database looks like--  
+                          
+Now let's go through all the topics in detai:
+
+  1. Traffic Source Analysis, Bid Optimization & Trend Analysis.
+  
+    - It is crucial to understand where your customers are coming from and which marketing channels are driving the highest traffic.
+    - We will also find the conversion rates for each marketing campaign, it helps us shift our budget towards high-quality traffic, make informed decision making, eliminate wasted spending.
+    - Paid traffic is identified by UTM parameters appended in URLs, and they allow us to tie website activity back to specific traffic sources and campaigns.
+    - We are going to use UTM parameters stored in the website_sessions table in the database to recognize paid website sessions.
+      STEP 1 : We will link website_sessions and orders table to know how much revenue our paid campaigns are driving and their conversion rates.
+      STEP 2 : BID OPTIMIZATION is knowing the value of different paid traffic segments in order to optimize your marketing budget.
+        - Conversion rate and revenue per click analysis are used to figure out how much is spent per click to acquire customers.
+        - For now, we'll assume that gsearch nonbrand campaign performance of site in a mobile device is not great
+          - So we'll find out the conversion rate from sessions to orders on the basis of device type. If the desktop performance is better than mobile, then we can bid up for desktop.
+      STEP 3 : Trend analysis helps us see how far our business has come in the last two to five years. We can do trend analysis of sessions by week and year using date functions.
+
+  2. Analyzing Website Performance.
+  
+    - Some of the ways of Analyzing a website performance are as follows:
+    * ANALYZING TOP WEBSITE PAGES :
+      - Website content is having a knowledge of pages that are seen the most by the users. It involves recognizing the most common entry pages(the landing page/ the first page user sees) and know how they perform for your business objectives.
+      - We will create a temporary table first_pageview from website_pageviews and self-join them to get the most common entry page for a specific period.
+    * ANALYZING AND TESTING CONVERSION FUNNELS :
+      - Conversion Funnels aim to understand and improve each step of user's experience on their journey towards buying your products.
+      - We are going to identify the most common paths users take before purchasing products and analyze how many users continue on each step in your conversion flow and how many users abandon at each step.
+      - For simplicity, we will consider the path from /lander-2 to /cart and consider only one product that is Mr.Fuzzy.
+      - There will be 3 steps to follow to get a conversion funnel:
+        -> Firstly, we are going to have pageviews for required pages like /lander-2, /products, /the-original-mr-fuzzy, and /cart. For that, we will join website_pageviews with website_sessions.
+        -> Next, Now we will identify each relevant pageview as the specific funnel steps. For that, we will embed the whole above query as a subquery to find sessions that have been made through for our pages.
+        -> And last, Create the session level conversion funnel view.
+        -- After the analysis, I got the below Output : 
+            - we can say that from all 10630 sessions that made through lander_2 page, 7780 made through products_page, and from 7780 sessions 4772 made through mr_fuzzy_page, and from 4772 sessions 2892 made through cart_page --
+-- In this way, we can create conversion funnels from the home page(/lander-1) to the thank you page(/thank_you_page).
