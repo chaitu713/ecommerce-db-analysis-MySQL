@@ -69,5 +69,4 @@ Now let's go through all the topics in detai:
     - Having knowledge of seasonality helps better prepare for upcoming spikes or slowdowns in demand. To dig deep into business patterns and seasonality, we will use date functions.
     - We'll see this concept through 2 hypothetical situations.
       * Suppose 2012 was a great year for us. As we continue to grow, we should take a look at 2012’s monthly volume patterns to see if we can find any seasonal trend we should plan for the year 2013. Your CEO wants to know session volume and order volume.
-      
-    
+      * Suppose the CEO is considering adding live chat on the website to improve customer satisfaction. He wants to analyze average session volume by an hour of the day and by day week to allocate staff appropriately. Avoid the holiday period and use a date range for Sept 15 to Nov 15, 2013.
