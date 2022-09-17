@@ -60,4 +60,4 @@ Now let's go through all the topics in detai:
         -> And last, Create the session level conversion funnel view.
         -- After the analysis, I got the below Output : 
             - we can say that from all 10630 sessions that made through lander_2 page, 7780 made through products_page, and from 7780 sessions 4772 made through mr_fuzzy_page, and from 4772 sessions 2892 made through cart_page --
--- In this way, we can create conversion funnels from the home page(/lander-1) to the thank you page(/thank_you_page).
+        -- In this way, we can create conversion funnels from the home page(/lander-1) to the thank you page(/thank_you_page).
