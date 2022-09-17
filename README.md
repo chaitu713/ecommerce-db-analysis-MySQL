@@ -70,3 +70,16 @@ Now let's go through all the topics in detai:
     - We'll see this concept through 2 hypothetical situations.
       * Suppose 2012 was a great year for us. As we continue to grow, we should take a look at 2012’s monthly volume patterns to see if we can find any seasonal trend we should plan for the year 2013. Your CEO wants to know session volume and order volume.
       * Suppose the CEO is considering adding live chat on the website to improve customer satisfaction. He wants to analyze average session volume by an hour of the day and by day week to allocate staff appropriately. Avoid the holiday period and use a date range for Sept 15 to Nov 15, 2013.
+
+  4. Product Level Analysis.
+    
+    - Product Analysis helps us to understand how each product contributes to your business.
+    - Suppose the CEO has launched the second product in jan6. She wants to see monthly order volume, overall conversion rate, revenue per session, and sales breakdown by product all for the time since April 1, 2012.
+    - Let’s understand what cross-sell analysis is. It is about knowing which products users are likely to purchase together and provide smart product recommendations.
+    - Let’s move to product refund analysis. It is analyzing refund rates for controlling quality and understand where you might have problems to address. Considering product refund rates and associated costs can give a gist of the overall performance of your business.
+    
+ 5. User Level Analysis.
+ 
+    - User analysis helps us to understand user behavior and identify some of our most valuable customers. It includes analyzing repeat behavior activity and which channel they use when they come back. 
+
+-- These are the several aspects that help to make the data-driven decision for your Online Store --
