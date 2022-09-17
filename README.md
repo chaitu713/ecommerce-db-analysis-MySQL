@@ -78,7 +78,7 @@ Now let's go through all the topics in detai:
     - Let’s understand what cross-sell analysis is. It is about knowing which products users are likely to purchase together and provide smart product recommendations.
     - Let’s move to product refund analysis. It is analyzing refund rates for controlling quality and understand where you might have problems to address. Considering product refund rates and associated costs can give a gist of the overall performance of your business.
     
- 5. User Level Analysis.
+  5. User Level Analysis.
  
     - User analysis helps us to understand user behavior and identify some of our most valuable customers. It includes analyzing repeat behavior activity and which channel they use when they come back. 
 
