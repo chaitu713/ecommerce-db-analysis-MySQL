@@ -61,3 +61,13 @@ Now let's go through all the topics in detai:
         -- After the analysis, I got the below Output : 
             - we can say that from all 10630 sessions that made through lander_2 page, 7780 made through products_page, and from 7780 sessions 4772 made through mr_fuzzy_page, and from 4772 sessions 2892 made through cart_page --
         -- In this way, we can create conversion funnels from the home page(/lander-1) to the thank you page(/thank_you_page).
+        
+  3. Analyzing seasonality & Business Trends.
+  
+    - Business trends help in generating insights to help maximize efficieny, and predict future trends. 
+    - Day-parting analysis helps us to understand how much support staff you should have at different times of the day or days of week.
+    - Having knowledge of seasonality helps better prepare for upcoming spikes or slowdowns in demand. To dig deep into business patterns and seasonality, we will use date functions.
+    - We'll see this concept through 2 hypothetical situations.
+      * Suppose 2012 was a great year for us. As we continue to grow, we should take a look at 2012’s monthly volume patterns to see if we can find any seasonal trend we should plan for the year 2013. Your CEO wants to know session volume and order volume.
+      
+    
